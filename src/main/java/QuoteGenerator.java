@@ -6,7 +6,7 @@ import javax.annotation.PostConstruct;
  * Created by slava23 on 2/15/2017.
  */
 @Profiling
-@DeprecatedClass(newImpl = NewQuoteGenerator.class)
+//@DeprecatedClass(newImpl = NewQuoteGenerator.class)
 public class QuoteGenerator implements Generator {
 
     @Value("${app.message}")
@@ -18,7 +18,9 @@ public class QuoteGenerator implements Generator {
         System.out.println("Phase 1..");
     }
 
+    @AfterProxy
     public void sayQuote() {
+        System.out.println("Phase 3..");
         for (int i= 0; i< repeat; i++) {
             System.out.println(message);
         }

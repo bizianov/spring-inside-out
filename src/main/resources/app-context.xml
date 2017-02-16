@@ -9,6 +9,7 @@
     <bean class="InjectRandomIntBeanPostProcessor"/>
     <bean class="ProfilingAnnotationBeanPostProcessor"/>
     <bean class="DeprecationInvokerBeanFactoryPostProcessor"/>
+    <bean class="AfterProxyContextListener"/>
 
     <bean id="generator" class="QuoteGenerator"/>
 
