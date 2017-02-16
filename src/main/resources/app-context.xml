@@ -8,6 +8,7 @@
 
     <bean class="InjectRandomIntBeanPostProcessor"/>
     <bean class="ProfilingAnnotationBeanPostProcessor"/>
+    <bean class="DeprecationInvokerBeanFactoryPostProcessor"/>
 
     <bean id="generator" class="QuoteGenerator"/>
 

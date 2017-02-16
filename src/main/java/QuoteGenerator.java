@@ -6,6 +6,7 @@ import javax.annotation.PostConstruct;
  * Created by slava23 on 2/15/2017.
  */
 @Profiling
+@DeprecatedClass(newImpl = NewQuoteGenerator.class)
 public class QuoteGenerator implements Generator {
 
     @Value("${app.message}")
